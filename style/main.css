@@ -381,7 +381,8 @@ footer .container:nth-child(1) > * {
         top: 8.125rem;
         right: 0;
         background-color: rgba(66, 63, 62, 0.8);
-        transform: translate(16.25rem, 0);
+        /* transform: translate(16.25rem, 0); */
+        transform: translate(50vw, 0);
     }
 
     .main-nav-bar a {
@@ -422,7 +423,7 @@ footer .container:nth-child(1) > * {
         /* top: 51%; */
         /* right: 100%; */
         top: -50%;
-        right: 75%;
+        right: 100%;
     }
     .main-nav-bar a ul li {
         width: 50vw;
