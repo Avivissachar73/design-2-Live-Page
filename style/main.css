@@ -385,7 +385,8 @@ footer .container:nth-child(1) > * {
     }
 
     .main-nav-bar a {
-        width: 16.25rem;
+        /* width: 16.25rem; */
+        width: 50vw;
         color: #f8f8f8;
     }
     .main-nav-bar a:hover {
@@ -422,6 +423,9 @@ footer .container:nth-child(1) > * {
         /* right: 100%; */
         top: -50%;
         right: 75%;
+    }
+    .main-nav-bar a ul li {
+        width: 50vw;
     }
 
 }
