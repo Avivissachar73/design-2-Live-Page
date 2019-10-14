@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Blogin</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+
+    <div class="screen" onclick="onClose()"></div>
+
+    <div class="modal column align-center space-around">
+        <h2 class="modal-title">Modal</h2>
+        <p class="modal-txt txt-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque harum, culpa minima repellendus autem aspernatur fuga ea provident, omnis sequi eius alias. Nam at eaque ratione, alias deleniti beatae saepe?</p>
+        <button class="close-modal" onclick="onToggleModal()">Cancel</button>
+    </div>
+
+    <header class="">
+        <div class="container flex align-center space-between">
+            <div class="logo flex align-center">Blogin<span>.</span></div>
+            <button class="nav-hamburger align-center" onclick="onToggleNav()">☰</button>
+            <ul class="main-nav-bar flex space-between cleen-list">
+                <li><a class="relative flex align-center justify-center selected"><span class="absolute flex align-center justify-center">Journal</span>
+                    <ul class="relative flex column align-center justify-center cleen-list">
+                        <!-- <li><a class="flex align-center justify-center">October 2016</a></li>
+                        <li><a class="flex align-center justify-center">January 2017</a></li>
+                        <li><a class="flex align-center justify-center">April 2017</a></li>
+                        <li><a class="flex align-center justify-center">July 2017</a></li> -->
+                        <li class="flex align-center justify-center">October 2016</li>
+                        <li class="flex align-center justify-center">January 2017</li>
+                        <li class="flex align-center justify-center">April 2017</li>
+                        <li class="flex align-center justify-center">July 2017</li>
+                    </ul>
+                </a></li>
+                <li><a class="relative flex align-center justify-center" href=""><span class="absolute flex align-center justify-center">About</span></a></li>
+                <li><a class="relative flex align-center justify-center" href=""><span class="absolute flex align-center justify-center">Work</span></a></li>
+                <li><a class="relative flex align-center justify-center" href=""><span class="absolute flex align-center justify-center">Contact</span></a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="">
+        <div class="container container-border">
+            <section class="card flex">
+                <img class="card-item card-img" src="./images/Layer_2.png" alt="">
+                <div class="card-item card-info flex column space-between">
+                    <h2 class="card-title">Duis aute irure dolor in henderit in voluptate.</h2>
+                    <p class="card-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis mollitia recusandae ipsam enim rerum reprehenderit neque, exercitationem nemo esse molestiae vero natus suscipit eos sequi cumque eaque doloribus? Ducimus, explicabo.</p>
+                    <p class="card-txt">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis mollitia recusandae ipsam enim rerum reprehenderit neque, exercitationem nemo esse molestiae vero natus suscipit eos sequi cumque eaque doloribus? Ducimus, explicabo.</p>
+                    <button class="card-button round-button" onclick="onToggleModal()">Continue Reading</button>
+                </div>
+            </section>
+        </div>
+        <div class="page-shift container container-border flex space-between">
+            <button class="page-shift-button">&#8592; Previous</button>
+            <button class="page-shift-button">Next &#8594;</button>
+        </div>
+    </main>
+
+    <footer class="flex align-center justify-center">
+        <div class="container flex column align-center justify-center">
+            <div class="logo">Blogin<span>.</span></div>
+            <small class="txt-center">© 2014 Blogin.com  -  All Rights Reserved  -  Find more free Templates at Pixelhint.com</small>
+            <div class="share-container container flex align-center justify-center">
+                <div class="share-icon facebook-icon flex align-center justify-center">f</div>
+                <div class="share-icon"></div>
+                <div class="share-icon"></div>
+                <div class="share-icon"></div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function onToggleNav() {
+            document.querySelector('.main-nav-bar').classList.toggle('open');
+            document.querySelector('.screen').classList.toggle('open');
+        }
+        
+        function onClose() {
+            document.querySelector('.main-nav-bar').classList.remove('open');
+            document.querySelector('.modal').classList.remove('open');
+            document.querySelector('.screen').classList.remove('open');
+
+        }
+        
+        function onToggleModal() {
+            document.querySelector('.modal').classList.toggle('open');
+            document.querySelector('.screen').classList.toggle('open');
+        }
+    </script>
+    
+</body>
+</html>
